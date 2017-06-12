@@ -1,0 +1,393 @@
+@import "reset.css"
+@import "fonts.css"
+
+/**
+* Global style
+*/
+body
+  font-family 'HelveticaNeueCyr-Medium'
+
+.max-width-container
+  max-width 1215px
+  margin 0 auto
+
+.big-button
+  background linear-gradient(to top, #62a400, #9deb05)
+  border 2px solid #92db06
+  border-bottom-color #385f00
+  border-left-color #67a102
+  border-right-color #67a102
+  border-radius 4px
+  font 35px 'CenturyGothic';
+  text-transform uppercase
+  padding 5px 25px
+  margin 30px auto 0
+  display block
+  outline none
+  cursor pointer
+  span
+    display block
+    font-size 24px
+    text-transform none
+    color #fff
+
+/**
+* Header
+*/
+.header
+  background url("../images/header-bg.png") center no-repeat
+  background-size cover
+  height 100vh
+
+.top-header
+  padding 20px 35px 0 60px
+  display flex
+  .logo
+    text-align center
+    span
+      font-family 'HelveticaNeueCyr-Light'
+      color #008dd2
+      display block
+  .big-title
+    text-align center
+    h1
+      background: -webkit-linear-gradient(#63bf00, #3b7f00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font 40px 'CenturyGothic-Bold'
+      text-transform uppercase
+    h2
+      font 30px 'CenturyGothic-Bold'
+      color #008dd2
+      margin-top 10px
+      .flag-country
+        margin-left 100px
+  .menu-gb
+    width 37px
+    margin 15px 0 0 85px
+    span
+      background #a9a9a9
+      display block
+      width 100%
+      height 4px
+      &:not(:last-child)
+        margin-bottom 7px
+.video
+  text-align center
+  margin-top 30px
+  img
+    max-width 55%
+    position relative
+    z-index 1
+.desk
+  margin-top -320px
+  position relative
+  img
+    max-width 100%
+
+.contact-top
+  position absolute
+  bottom 110px
+  width 100%
+  text-align center
+  z-index 3
+  form
+    >span
+      border-radius 5px
+      border 2px solid #31b500
+      display inline-block
+      margin 0 13px
+  input
+    background #ededed
+    border-radius 5px
+    border 2px solid #c6c6c6
+    width 300px
+    padding: 15px 15px 15px 45px;
+    outline none
+    font-size 18px
+    &[type="text"]
+      background #ededed url("../images/icon/name.png") 10px center no-repeat
+    &[type="email"]
+      background #ededed url("../images/icon/email.png") 10px center no-repeat
+  .button-wrap
+    position absolute
+    width 100%
+    text-align center
+/**
+* How in works
+**/
+.how-work
+  margin-top 205px
+  >img
+    max-width 100%
+.work-list
+  max-width 900px
+  margin 50px auto
+  position relative
+  .right-image
+    position absolute
+    right 0
+    top 0
+    img
+      width 330px
+      margin-top -85px
+      margin-right -45px
+    h2
+      position absolute
+      top 205px
+      right 35px
+      width 280px
+      font 30px 'CenturyGothic-Bold'
+      color #fff
+      text-transform uppercase
+      transform rotate(-68deg)
+  ul
+    li
+      color #ffffff
+      font 22px 'CenturyGothic'
+      padding-left 90px
+      display flex
+      align-items center
+      height 170px
+      &:not(:last-child)
+        margin-bottom 20px
+      &:nth-child(1)
+        background url("../images/work-1.png") left center no-repeat
+        background-size contain
+      &:nth-child(2)
+        background url("../images/work-2.png") left center no-repeat
+        background-size contain
+      &:nth-child(3)
+        background url("../images/work-3.png") left center no-repeat
+        background-size contain
+/**
+* Real time
+*/
+.real-time
+  background #f3f3f3
+  padding 60px 0
+  .content-time
+    max-width 900px
+    margin 0 auto
+    .big-button
+      margin-top 65px
+    h2
+      text-align center
+      color #008dd2
+      font 30px 'CenturyGothic-Bold'
+      text-transform uppercase
+    .profit
+      background #fff
+      border 1px solid #d2d2d2
+      margin-top 35px
+      padding-top 10px
+      h3
+        font 20px 'CenturyGothic-Bold'
+        text-align center
+        span
+          color #fd0000
+      table
+        width 100%
+        margin-top 10px
+        td
+          padding 15px
+        thead
+          td
+            background #f3f3f3
+            text-align center
+            color #434340
+        tbody
+          tr
+            &:nth-child(2n)
+              background #f3f3f3
+          td
+            text-align center
+            color #0466af
+            padding 13px 15px
+            font 21px 'CenturyGothic-Bold'
+            img
+              vertical-align sub
+            .payout
+              background linear-gradient(to top, #18a400, #7ce600)
+              color #fff
+              display inline-block
+              padding 5px 30px
+              border-radius 3px
+/**
+* Creator
+*/
+.creator
+  padding 50px 0
+  .content-creator
+    max-width 900px
+    margin 0 auto
+    h2
+      text-align center
+      color #65849f
+      font 30px 'CenturyGothic-Bold'
+      text-transform uppercase
+    .list-creator
+      margin-top 50px
+      li
+        color #fff
+        font 19px 'CenturyGothic'
+        height 200px
+        position relative
+        display flex
+        align-items center
+        padding 10px 0 10px 250px
+        &:nth-child(1)
+          background url("../images/creators-1.png") left center no-repeat
+          background-size contain
+        &:nth-child(2)
+          background url("../images/creators-2.png") left center no-repeat
+          background-size contain
+          padding-left 95px
+          .lab
+            left inherit
+            right -40px
+        &:nth-child(3)
+          background url("../images/creators-3.png") left center no-repeat
+          background-size contain
+        &:not(:last-child)
+          margin-bottom 10px
+        .lab
+          background url("../images/icon/cart.png") center no-repeat
+          background-size contain
+          width 295px
+          height 185px
+          position absolute
+          left -65px
+          margin-top 5px
+          .clip
+            position absolute
+            left 50%
+            width 50px
+            margin-left -27px
+            top -46px
+          .avatar
+            width 113px
+            top 33px
+            left 10px
+            position absolute
+          h4
+            position absolute
+            right 20px
+            top 74px
+            font-size 16px
+          p
+            position absolute
+            right 20px
+            top 106px
+            font-family 'CenturyGothic-Bold'
+            color #566e83
+/**
+* Frequently
+*/
+.frequently
+  background #eaf0e9
+  padding 50px 0
+  .content-frequently
+    max-width 1000px
+    margin 0 auto
+    h2
+      text-align center
+      color #6a7887
+      font 30px 'CenturyGothic-Bold'
+      text-transform uppercase
+    .list-frequently
+      margin-top 40px
+      li
+        background #fff
+        display flex
+        align-items stretch
+        height 130px
+        padding 0 20px
+        position relative
+        &:not(:last-child)
+          margin-bottom 25px
+        &:before
+          content ''
+          background url("../images/icon/top-frequen.png") right center no-repeat
+          background-size contain
+          position absolute
+          right 20px
+          top -10px
+          width 75%
+          height 10px
+        &:after
+          content ''
+          background url("../images/icon/bottom-frequen.png") left center no-repeat
+          background-size contain
+          position absolute
+          left 40px
+          bottom -9px
+          width 75%
+          height 10px
+        >span
+          display block
+          color #ffffff
+          font 40px 'CenturyGothic-Bold'
+          line-height 100px
+          padding 15px
+          width 75px
+          text-align center
+          position relative
+          &:after
+            left 100%
+            top 50%
+            border solid transparent
+            content " "
+            height 0
+            width 0
+            position absolute
+            pointer-events none
+            border-color rgba(136, 183, 213, 0)
+            border-left-color #88b7d5
+            border-width 10px
+            margin-top -10px
+          &.color-1
+            background #0875bd
+            &:after
+              border-left-color #0875bd
+          &.color-2
+            background #159be5
+            &:after
+              border-left-color #159be5
+          &.color-3
+            background #565acd
+            &:after
+              border-left-color #565acd
+          &.color-4
+            background #429eb4
+            &:after
+              border-left-color #429eb4
+          &.color-5
+            background #50b874
+            &:after
+              border-left-color #50b874
+          &.color-6
+            background #78917f
+            &:after
+              border-left-color #78917f
+
+        .text
+          margin 10px 10px 10px 30px
+        h4
+          font 22px 'CenturyGothic-Bold'
+          margin-bottom 10px
+          &.color-1
+            color #0875bd
+          &.color-2
+            color #159be5
+          &.color-3
+            color #565acd
+          &.color-4
+            color #429eb4
+          &.color-5
+            color #50b874
+          &.color-6
+            color #78917f
+        p
+          font 15px 'CenturyGothic'
+          
